@@ -10,8 +10,8 @@
 		"lintfix:js": "yarn lint:js --fix",
 		"lint:style": "stylelint \"**/*.{css,scss,sass,html,vue}\" --ignore-path .gitignore",
 		"lintfix:style": "yarn lint:style --fix",
-		"lint:prettier": "prettier --check .",
-		"lintfix:prettier": "prettier --write --list-different .",
+		"lint:prettier": "prettier --ignore-path ./.gitignore --check .",
+		"lintfix:prettier": "prettier --ignore-path ./.gitignore --write --list-different .",
 		"lint": "yarn lint:js && yarn lint:style && yarn lint:prettier",
 		"lintfix": "yarn lintfix:prettier && yarn lintfix:js && yarn lintfix:style"
 	},
