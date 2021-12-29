@@ -31,7 +31,7 @@ const languages = [
 								<span class="sr-only">Webflorist</span>
 								<img
 									alt="Webflorist logo"
-									src="webflorist.svg"
+									src="/webflorist.svg"
 									class="w-10"
 								/>
 							</a>

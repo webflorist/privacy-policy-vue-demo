@@ -1,6 +1,9 @@
 <script setup>
+import { useI18n } from 'vue-i18n'
 import { PrivacyPolicy } from '@webflorist/privacy-policy-vue'
 import PageHeader from './components/PageHeader.vue'
+
+const { locale } = useI18n()
 
 let cookies = {
 	first_party: [
@@ -59,6 +62,7 @@ const dataProcessing = {
 		<PrivacyPolicy
 			privacy-email="privacy@example.com"
 			:cookies="cookies"
+			:locale="locale"
 			:data-processing="dataProcessing"
 		/>
 	</article>
