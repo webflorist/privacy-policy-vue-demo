@@ -3,12 +3,13 @@
 		"browser": true,
 		"es2021": true,
 		"node": true,
-		"amd": true
+		"amd": true,
+		"vue/setup-compiler-macros": true
 	},
 
 	"extends": [
 		"eslint:recommended",
-		"plugin:vue/vue3-essential",
+		"plugin:vue/vue3-recommended",
 		"plugin:@typescript-eslint/recommended",
 		"prettier"
 	],
