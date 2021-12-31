@@ -317,9 +317,9 @@
   integrity sha512-vPV6Cq+NIWbH5pZu+V+2QHE9y1qfuTq49uNWw4f7FDEeZaDU2H2cx5jcUZOAKW7qTrUS4k6qZPbMy1x4N96nbA==
 
 "@webflorist/privacy-policy-text@^1.0.0":
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/@webflorist/privacy-policy-text/-/privacy-policy-text-1.2.0.tgz#1ad0433a2710d2a9a7b1c4f01b597a4051a02824"
-  integrity sha512-yBv7PJpLdovjNVe7Mrl9S6pSlgjII1H8ekHLi+aXFCur5YGEkOqG7eUZGT5BdiS4eYQRzWZd965BDof2GP0VjA==
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/@webflorist/privacy-policy-text/-/privacy-policy-text-1.2.1.tgz#3085c08d5f4af8464560c7caff34df577e91540d"
+  integrity sha512-xjHERq1ml93FGBz22CD4AW/8KsubLqu2Eo90KKnhhuRTjV2CjIc0LT6AD1q2Ye2RYR4IhQDCs4bHRhTFd6bxAg==
   dependencies:
     rollup "^2.62.0"
 
