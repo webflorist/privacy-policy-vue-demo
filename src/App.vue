@@ -1,6 +1,6 @@
 <script setup>
 import { useI18n } from 'vue-i18n'
-import { PrivacyPolicy } from '@webflorist/privacy-policy-vue'
+import PrivacyPolicy from '@webflorist/privacy-policy-vue'
 import PageHeader from './components/PageHeader.vue'
 
 const { locale } = useI18n()
@@ -27,10 +27,9 @@ let cookies = {
 }
 
 const dataProcessing = {
-	webserver: {
-		processor: 'google_eu',
+	webhosting: {
+		processor: ['netlify','storyblok'],
 		data_categories: ['usage_data'],
-		service: 'Netlify Hosting',
 	},
 	analytics: {
 		processor: 'google_eu',
