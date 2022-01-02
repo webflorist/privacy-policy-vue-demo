@@ -17,6 +17,9 @@
 [[plugins]]
 package = "netlify-plugin-checklinks"
 
+  [plugins.inputs]
+  skipPatterns = ["fonts.googleapis.com", "fonts.gstatic.com"]
+
 [[plugins]]
 package = "netlify-plugin-is-website-vulnerable"
 
