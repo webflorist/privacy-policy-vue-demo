@@ -2,6 +2,13 @@
 import { useI18n } from 'vue-i18n'
 import GithubLogo from './GithubLogo.vue'
 
+defineProps({
+	singular: {
+		type: Boolean,
+		required: true,
+	},
+})
+
 const { locale } = useI18n({ useScope: 'global' })
 
 const languages = [
@@ -15,12 +22,10 @@ const languages = [
 		<div class="relative pt-6 pb-16 sm:pb-24">
 			<div class="max-w-7xl mx-auto px-4 sm:px-6">
 				<nav
-					class="relative flex items-center justify-between sm:h-10 md:justify-center"
+					class="relative flex flex-wrap items-center justify-between sm:h-10"
 					aria-label="Global"
 				>
-					<div
-						class="flex items-center flex-1 md:absolute md:inset-y-0 md:left-0"
-					>
+					<div class="flex items-center flex-1 basis-10">
 						<div
 							class="flex items-center justify-between w-full md:w-auto"
 						>
@@ -38,29 +43,42 @@ const languages = [
 						</div>
 					</div>
 					<div
-						class="absolute flex items-center justify-end inset-y-0 right-0"
+						class="flex text-center flex-wrap items-center gap-5 justify-end"
 					>
-						<span
-							class="relative z-0 inline-flex shadow-sm rounded-md"
-						>
+						<div class="button-group relative z-0 inline-flex">
+							<a
+								href="/"
+								class="button"
+								:class="{
+									active: !singular,
+								}"
+							>
+								Plural
+							</a>
+							<a
+								class="button"
+								href="/?singular"
+								:class="{
+									active: singular,
+								}"
+							>
+								Singular
+							</a>
+						</div>
+						<div class="button-group relative z-0 inline-flex">
 							<button
 								v-for="(language, key) in languages"
 								:key="key"
 								type="button"
-								class="relative inline-flex items-center px-4 py-2 border border-gray-300 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:z-10 focus:outline-none focus:ring-1 focus:ring-primary-500 focus:border-primary-500"
 								:class="{
-									'rounded-l-md': key === 0,
-									'rounded-r-md':
-										key === languages.length - 1,
-									'bg-primary text-white font-bold hover:bg-primary':
-										locale === language.locale,
+									active: locale === language.locale,
 								}"
 								:disabled="locale === language.locale"
 								@click="locale = language.locale"
 							>
 								{{ language.name }}
 							</button>
-						</span>
+						</div>
 					</div>
 				</nav>
 			</div>
@@ -118,3 +136,29 @@ const languages = [
 		</div>
 	</div>
 </template>
+
+<style scoped>
+button,
+.button {
+	@apply relative inline-flex items-center px-4 py-2 border border-gray-300 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:z-10 focus:outline-none focus:ring-1 focus:ring-primary-500 focus:border-primary-500;
+
+	&.active {
+		@apply bg-primary text-white font-bold hover:bg-primary;
+	}
+}
+
+.button-group {
+	@apply shadow-sm rounded-md;
+
+	button,
+	.button {
+		&:first-child {
+			@apply rounded-l-md;
+		}
+
+		&:last-child {
+			@apply rounded-r-md;
+		}
+	}
+}
+</style>

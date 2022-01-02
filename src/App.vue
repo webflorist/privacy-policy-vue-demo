@@ -5,13 +5,24 @@ import PageHeader from './components/PageHeader.vue'
 
 const { locale } = useI18n()
 
+const singular =
+	new URLSearchParams(window.location.search).get('singular') !== null
+
+const dataController = {
+	organisation: 'Acme Corporation',
+	name: 'John Doe',
+	address: 'Acme Street 1, 123456 Acme City, USA',
+	email: 'privacy@example.com',
+	phone: '+1 555-0123',
+}
+
 let cookies = {
 	first_party: [
 		{
 			name: 'session',
-			purpose: 'session', // session|xsrf|hide_alert|analytics|maps|analytics_third_party|maps_third_party
-			written_on: 'every_visit', // every_visit|hide_alert|maps|accept_cookies
-			duration: 'end_of_session', // end_of_session|1_year|2_years|24_hours|1_minute|various
+			purpose: 'session', // session | xsrf | hide_alert | analytics | maps | analytics_third_party | maps_third_party
+			written_on: 'every_visit', // every_visit | hide_alert | maps | accept_cookies
+			duration: 'end_of_session', // end_of_session | 1_year | 2_years | 24_hours | 1_minute | various
 		},
 	],
 	third_party: [
@@ -28,7 +39,7 @@ let cookies = {
 
 const dataProcessing = {
 	webhosting: {
-		processor: ['netlify','storyblok'],
+		processor: ['netlify', 'storyblok'],
 		data_categories: ['usage_data'],
 	},
 	analytics: {
@@ -55,13 +66,14 @@ const dataProcessing = {
 </script>
 
 <template>
-	<PageHeader />
+	<PageHeader :singular="singular" />
 	<article class="container mx-auto prose lg:prose-lg my-10 px-10">
 		<h1>{{ $t('privacy_policy') }}</h1>
 		<PrivacyPolicy
-			privacy-email="privacy@example.com"
-			:cookies="cookies"
+			:singular="singular"
 			:locale="locale"
+			:data-controller="dataController"
+			:cookies="cookies"
 			:data-processing="dataProcessing"
 		/>
 	</article>
