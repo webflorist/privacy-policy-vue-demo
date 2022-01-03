@@ -317,9 +317,9 @@
   integrity sha512-vPV6Cq+NIWbH5pZu+V+2QHE9y1qfuTq49uNWw4f7FDEeZaDU2H2cx5jcUZOAKW7qTrUS4k6qZPbMy1x4N96nbA==
 
 "@webflorist/privacy-policy-text@^1.0.0":
-  version "1.3.1"
-  resolved "https://registry.yarnpkg.com/@webflorist/privacy-policy-text/-/privacy-policy-text-1.3.1.tgz#cc5f35e434dd48541f94eba39c660596983e2997"
-  integrity sha512-feaHjB7GJpcojRmsKPUjodACOz+o8pZwT+QT+iWCzLh7XzQxmYqErtRjSW8Ngyqx11foG0m6BbEkWWYckT5Wfw==
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/@webflorist/privacy-policy-text/-/privacy-policy-text-1.4.0.tgz#cad1b7d1e2cc132f5a8b32c269d0663b915e1e23"
+  integrity sha512-j3it6Q2Kr8ELNcEUgi70KxwgunDL4Qbvh+WbETX2FY/jFPQA4QmaC15lSUWoiCyuguKxVnUc549vHdfeW6MSOw==
   dependencies:
     rollup "^2.62.0"
 
@@ -1697,9 +1697,9 @@ picocolors@^1.0.0:
   integrity sha512-1fygroTLlHu66zi26VoTDv8yRgm0Fccecssto+MhsZ0D/DGW2sm8E8AjW7NU5VVTRt5GxbeZ5qBuJr+HyLYkjQ==
 
 picomatch@^2.0.4, picomatch@^2.2.1, picomatch@^2.2.3:
-  version "2.3.0"
-  resolved "https://registry.yarnpkg.com/picomatch/-/picomatch-2.3.0.tgz#f1f061de8f6a4bf022892e2d128234fb98302972"
-  integrity sha512-lY1Q/PiJGC2zOv/z391WOTD+Z02bCgsFfvxoXXf6h7kv9o+WmsmzYqrAwY63sNgOxE4xEdq0WyUnXfKeBrSvYw==
+  version "2.3.1"
+  resolved "https://registry.yarnpkg.com/picomatch/-/picomatch-2.3.1.tgz#3ba3833733646d9d3e4995946c1365a67fb07a42"
+  integrity sha512-JU3teHTNjmE2VCGFzuY8EXzCDVwEqB2a8fsIvwaStHhAWJEeVd1o1QD80CU6+ZdEXXSLbSsuLwJjkCBWqRQUVA==
 
 pify@^2.3.0:
   version "2.3.0"
