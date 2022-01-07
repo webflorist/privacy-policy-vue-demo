@@ -6,6 +6,10 @@ const primaryColor = colors.purple
 module.exports = {
 	content: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
 	theme: {
+		screens: {
+			xs: '475px',
+			...defaultTheme.screens,
+		},
 		extend: {
 			fontFamily: {
 				sans: ['"Inter"', ...defaultTheme.fontFamily.sans],

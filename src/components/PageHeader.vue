@@ -25,7 +25,7 @@ const languages = [
 					class="relative flex flex-wrap items-center justify-between sm:h-10"
 					aria-label="Global"
 				>
-					<div class="flex items-center flex-1 basis-10">
+					<div class="flex items-center flex-1 basis-10 mb-5 xs:mb-0">
 						<div
 							class="flex items-center justify-between w-full md:w-auto"
 						>
@@ -43,7 +43,7 @@ const languages = [
 						</div>
 					</div>
 					<div
-						class="flex text-center flex-wrap items-center gap-5 justify-end"
+						class="flex text-center flex-wrap items-center gap-5 justify-center"
 					>
 						<div class="button-group relative z-0 inline-flex">
 							<a
@@ -102,13 +102,13 @@ const languages = [
 						<p class="mt-3" v-html="$t('intro.p3')" />
 					</div>
 					<div
-						class="mt-5 max-w-xl mx-auto sm:flex sm:justify-center md:mt-8"
+						class="mt-5 max-w-xl mx-auto xs:flex xs:justify-center md:mt-8"
 					>
 						<div class="rounded-md shadow">
 							<a
 								href="https://github.com/webflorist/privacy-policy-vue-demo"
 								target="_blank"
-								class="no-style w-full h-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md sm:rounded-r-none text-white bg-primary-600 hover:bg-primary-700 md:py-4 md:text-lg md:px-10 leading-tight"
+								class="no-style w-full h-full flex items-center justify-between px-8 py-3 border border-transparent text-base font-medium rounded-md xs:rounded-r-none text-white bg-primary-600 hover:bg-primary-700 md:py-4 md:text-lg md:px-10 leading-tight"
 							>
 								<GithubLogo
 									alt="Github logo"
@@ -117,11 +117,11 @@ const languages = [
 								{{ $t('source_code_demo') }}
 							</a>
 						</div>
-						<div class="mt-3 rounded-md shadow sm:mt-0">
+						<div class="mt-3 rounded-md shadow xs:mt-0">
 							<a
 								href="https://github.com/webflorist/privacy-policy-vue"
 								target="_blank"
-								class="no-style w-full h-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md sm:rounded-l-none text-primary-600 bg-white hover:bg-gray-50 md:py-4 md:text-lg md:px-10"
+								class="no-style w-full h-full flex items-center justify-between px-8 py-3 border border-transparent text-base font-medium rounded-md xs:rounded-l-none text-primary-600 bg-white hover:bg-gray-50 md:py-4 md:text-lg md:px-10 leading-tight"
 							>
 								<GithubLogo
 									alt="Github logo"
