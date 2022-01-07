@@ -11,7 +11,7 @@ const i18n = createI18n({
 		en: {
 			privacy_policy: 'Privacy Policy',
 			h1: {
-				line1: 'Demo Application for a',
+				line1: 'Demo Application for an',
 				line2: 'Open Source Privacy Policy',
 			},
 			intro: {
