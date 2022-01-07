@@ -17,7 +17,7 @@ const i18n = createI18n({
 			intro: {
 				p1: 'The privacy policy below is created using the open source package <a href="https://github.com/webflorist/privacy-policy-vue" target="_blank">webflorist/privacy-policy-vue</a>.',
 				p2: 'This text <i>should</i> be GDPR-compliant, although the author takes <strong>no responsibility</strong> whatsowever for this.',
-				p3: 'Feel free to use it as you wish.',
+				p3: 'This text is open-sourced and licensed under the <a href="https://github.com/webflorist/privacy-policy-text/blob/main/LICENSE.md" target="_blank">MIT license</a>.<br />Feel free to use it as you wish.',
 			},
 			source_code_demo: 'Source code of this demo',
 			source_code_parent: 'Source code of parent package',
@@ -31,7 +31,7 @@ const i18n = createI18n({
 			intro: {
 				p1: 'Die folgende Datenschutzerklärung wurde mit dem open source paket <a href="https://github.com/webflorist/privacy-policy-vue" target="_blank">webflorist/privacy-policy-vue</a> erstellt.',
 				p2: 'Dieser Text <i>sollte</i> DSGVO-konform sein. Der Autor übernimmt allerdings <strong>keinerlei Verantwortung</strong> dafür.',
-				p3: 'Der Text steht zur freien Verfügung.',
+				p3: 'Dieser Text ist open source und lizensiert mit der <a href="https://github.com/webflorist/privacy-policy-text/blob/main/LICENSE.md" target="_blank">MIT Lizenz</a>.<br />Der Text steht zur freien Verfügung.',
 			},
 			source_code_demo: 'Quellcode dieser Demo',
 			source_code_parent: 'Quellcode des Elternpakets',
